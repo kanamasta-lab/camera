@@ -1,25 +1,37 @@
 # Cozy Lens ♡
 
-Une petite app photo/lumière inspirée de Pinterest, avec une esthétique cocooning.
+Application photo + lumière au style Pinterest/cozy.
 
 ## Fonctionnalités
-- 📸 caméra avant/arrière
-- 🔍 zoom 0.5× / 1× / 2× (si le navigateur/appareil expose le contrôle zoom)
-- ⚡ flash/torch quand le navigateur le permet
-- ⊞ grille, minuteur 3 s
-- 🖼️ import d'une photo en **calque transparent** pour décalquer/reproduire dans la vraie vie
-- 💡 mode lumière plein écran avec couleurs, intensité et température
-- 🌈 preset arc-en-ciel
-- 📱 responsive mobile
+
+### Appareil 📸
+- Caméra avant/arrière
+- Zoom 0.5× / 1× / 2× quand le navigateur expose le zoom matériel
+- Flash/torch quand le téléphone le permet
+- Grille et minuteur 3 secondes
+- Capture photo + téléchargement
+- Galerie locale persistante dans le navigateur
+- Favoris et suppression
+- Filtres vintage : naturelle, crème, vintage, pellicule, blush, moody
+- Import d'une photo comme **calque** au-dessus de la caméra
+- Transparence du calque
+- Déplacement tactile du calque
+- Zoom du calque à la molette ou via les boutons +/−
+- Verrouillage du calque pour pouvoir décalquer tranquillement
+
+### Lumière 💡
+- Écran utilisé comme lumière
+- Couleurs multiples
+- Intensité
+- Température chaud/froid
+- Presets Bougie, Chaude, Neutre, Froide, Arc-en-ciel
+- Torch réel quand l'API navigateur le permet
 
 ## Lancer
+
 ```bash
 npm install
 npm run dev
 ```
-Puis ouvre l'adresse affichée par Vite. Pour la caméra, utilise **HTTPS** en production (ou localhost en développement).
 
-## Build GitHub Pages
-Le projet est une Vite SPA. Pour GitHub Pages, tu peux ajouter une action de déploiement Vite ou publier le dossier `dist` après `npm run build`.
-
-> Note navigateur : le vrai contrôle du flash/torch et du zoom dépend des capacités de l'appareil et du navigateur. Le mode Lumière utilise l'écran comme source lumineuse et tente aussi d'activer le torch du téléphone lorsque l'API est disponible.
+Pour la caméra sur un téléphone, utilise une URL HTTPS. Les capacités réelles de caméra/zoom/torch varient selon le navigateur et l'appareil.
